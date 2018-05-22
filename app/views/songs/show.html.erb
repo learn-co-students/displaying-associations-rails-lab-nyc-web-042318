@@ -1,0 +1,6 @@
+<h1><%= @song.title %></h1>
+<% if @song.artist %>
+  <h3><%= link_to @song.artist_name, artist_path(@song.artist) %></h3>
+<% else %>
+  <h3>No Artist Specified</h3>
+<% end %>
